@@ -1,0 +1,130 @@
+$primaryColor: #181817;
+$yellowColor: #fece76;
+$primaryFont: 'Poppins', sans-serif;
+$whiteColor: #fff;
+
+@mixin bgImage($path, $height) {
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: $height;
+}
+@mixin  yellowline($width) {
+    border:1px solid $yellowColor;
+    background-color: $yellowColor;
+    display: inline-block;
+    height: 2px;
+    width: $width;
+}
+@mixin  text($color,$lineheight) {
+    color: $color;
+    font-size: 25px;
+    line-height: $lineheight;
+    text-transform: capitalize;
+}
+@mixin lineRhomus{
+    .line{
+        height: 1px;
+        background-color: #5e5e5d;
+        width: 15%;
+        margin: 0 5px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .rhombus{
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-bottom-color: $yellowColor;
+        position: relative;
+        top: -16px;
+        display: inline-block;
+        &::after{
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 5px;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top-color: $yellowColor;
+        }
+    }
+}
+body{
+    font-family: $primaryFont;
+}
+header{
+    nav{
+        background-color: $primaryColor;
+        height: 100px;
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $whiteColor;
+                font-size: 14px;
+                letter-spacing: 100;
+                line-height: 32.88px;
+                text-transform: uppercase;
+                font-weight: bold;
+                &:hover{
+                    color: $whiteColor;
+                }
+            }
+            &:hover{
+                border-bottom: 1px solid $yellowColor;
+            }
+        }
+    }
+    .icons{
+        img{
+            margin:0 10px;
+        }
+    }
+    .banner{
+        @include bgImage('../img/banner_img.png', 793px );
+        .line{
+            @include yellowline(10%);
+            margin-bottom:5px;
+        }
+        .text-row{
+            padding-top: 30%
+        }
+        span.white-txt{
+           @include text($whiteColor, 19px );
+           margin-top:5px;
+        }
+        span.yellow-txt{
+            @include text($yellowColor, 19px );
+        }
+        h1{
+            color: $whiteColor;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 5%;
+        }
+    }
+}
+
+main{
+    .first-div{
+        background-color: $primaryColor;
+        padding: 5% 0;
+        .title-row{
+            h2{
+                font-size: 40px;
+                color: $yellowColor;
+                line-height: 19px;
+                letter-spacing: 100;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+            @include lineRhomus();
+        }
+    }
+
+}

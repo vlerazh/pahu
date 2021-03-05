@@ -1,0 +1,119 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header nav {
+  background-color: #181817;
+  height: 100px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 100;
+  line-height: 32.88px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+
+header ul li:hover {
+  border-bottom: 1px solid #fece76;
+}
+
+header .icons img {
+  margin: 0 10px;
+}
+
+header .banner {
+  background-image: url("../img/banner_img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 793px;
+}
+
+header .banner .line {
+  border: 1px solid #fece76;
+  background-color: #fece76;
+  display: inline-block;
+  height: 2px;
+  width: 10%;
+  margin-bottom: 5px;
+}
+
+header .banner .text-row {
+  padding-top: 30%;
+}
+
+header .banner span.white-txt {
+  color: #fff;
+  font-size: 25px;
+  line-height: 19px;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+header .banner span.yellow-txt {
+  color: #fece76;
+  font-size: 25px;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+
+header .banner h1 {
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+main .first-div {
+  background-color: #181817;
+  padding: 5% 0;
+}
+
+main .first-div .title-row h2 {
+  font-size: 40px;
+  color: #fece76;
+  line-height: 19px;
+  letter-spacing: 100;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+main .first-div .title-row .line {
+  height: 1px;
+  background-color: #5e5e5d;
+  width: 15%;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .first-div .title-row .rhombus {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #fece76;
+  position: relative;
+  top: -16px;
+  display: inline-block;
+}
+
+main .first-div .title-row .rhombus::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #fece76;
+}
+/*# sourceMappingURL=style.css.map */
