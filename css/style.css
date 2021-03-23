@@ -32,8 +32,8 @@ header .icons img {
 header .banner {
   background-image: url("../img/banner_img.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 793px;
+  background-size: cover;
+  min-height: 770px;
 }
 
 header .banner .line {
@@ -115,5 +115,26 @@ main .first-div .title-row .rhombus::after {
   height: 0;
   border: 5px solid transparent;
   border-top-color: #fece76;
+}
+
+main .first-div .content-row {
+  color: #fff;
+  margin-top: 8%;
+}
+
+main .first-div .content-row h3 {
+  color: #fece76;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+main .first-div .content-row img {
+  width: 100%;
+}
+
+main .first-div .content-row p {
+  font-size: 14px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

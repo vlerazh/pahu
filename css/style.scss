@@ -6,8 +6,8 @@ $whiteColor: #fff;
 @mixin bgImage($path, $height) {
     background-image: url($path);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: $height;
+    background-size: cover;
+    min-height: $height;
 }
 @mixin  yellowline($width) {
     border:1px solid $yellowColor;
@@ -84,7 +84,7 @@ header{
         }
     }
     .banner{
-        @include bgImage('../img/banner_img.png', 793px );
+        @include bgImage('../img/banner_img.png', 770px );
         .line{
             @include yellowline(10%);
             margin-bottom:5px;
@@ -124,6 +124,23 @@ main{
                 font-weight: 700;
             }
             @include lineRhomus();
+        }
+        .content-row{
+            color: $whiteColor;
+            margin-top: 8%;
+            h3{
+                color: $yellowColor ;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
     }
 
