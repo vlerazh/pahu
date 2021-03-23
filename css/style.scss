@@ -1,5 +1,6 @@
 $primaryColor: #181817;
 $yellowColor: #fece76;
+$lightGrayColor: #f9fafc;
 $primaryFont: 'Poppins', sans-serif;
 $whiteColor: #fff;
 
@@ -53,6 +54,9 @@ $whiteColor: #fff;
 }
 body{
     font-family: $primaryFont;
+}
+a{
+    text-decoration: none;
 }
 header{
     nav{
@@ -143,5 +147,265 @@ main{
             }
         }
     }
+    .second-div{
+        .row{
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            .banner-1{
+                background-color: #e5e7e6;
+                color: #749d26;
+                padding: 5%;
+                h4{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-bottom: 10%;
+                    width: 60%;
+                }
+                a{
+                    color: #749d26;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+                    font-size: 14px
 
+                }
+            }
+            .banner-2{
+                @include bgImage('../img/image1.png', 300px );
+            }
+            .banner-3{
+                @include bgImage('../img/image2.png', 300px );
+                padding: 5%;
+                h4{
+                    font-size: 30px;
+                    letter-spacing: 1.6px;
+                    font-weight: 600;
+                    color: #599ba7 ;
+                    text-transform: uppercase;
+                    width: 30%;
+                    margin-bottom: 5%;
+                }
+                a{
+                    letter-spacing: 1.6px;
+                    color: #599ba7;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+            .banner-4{
+                @include bgImage('../img/image3.png', 300px );
+                background-position: bottom;
+            }
+            .banner-5{
+                @include bgImage('../img/image4.png', 300px );
+                padding: 5%;
+                h4{
+                    font-size: 30px;
+                    letter-spacing: 1.6px;
+                    font-weight: 600;
+                    color: black ;
+                    text-transform: uppercase;
+                    width: 20%;
+                    margin-bottom: 5%;
+                }
+                a{
+                    letter-spacing: 1.6px;
+                    color: black;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+            .banner-6{
+                @include bgImage('../img/image5.png', 300px );
+            }
+        }
+        
+    }
+    .third-div{
+        padding: 5% 0;
+        background-color: $lightGrayColor;
+        .title-row{
+            h2{
+                font-size: 40px;
+                color: black;
+                line-height: 19px;
+                letter-spacing: 100;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+            @include lineRhomus();
+        }
+        .card-row {
+           .card{
+               background-color: $whiteColor;
+               border: none;
+               position: relative;
+               margin-bottom: 5%;
+               .card-img-top{
+                   height: 200px;
+               }
+               .card-title{
+                   font-size: 20px;
+                   text-transform: uppercase;
+                   line-height: 52.02px;
+                   font-weight: 600;
+               }
+               .card-text{
+                   font-size: 14px;
+                   color: #6d6d6d;
+               }
+               .product-price{
+                   font-size: 28px;
+                   line-height: 75px;
+                   font-weight: 600;
+               }
+               &:hover > .card-hover{
+                   display: table;
+               }
+               #triangle-topleft {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-top: 60px solid red;
+                border-right: 60px solid transparent;
+                p{
+                    width: 50px;
+                    position: absolute;
+                    top: -55px;
+                    transform: rotate(-45deg);
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }   
+           }
+           .card-hover{
+               position: absolute;
+               width: 105%;
+               left: -5px;
+               top: -5px;
+               height: 500px;
+               background: rgba($color: #ffda98, $alpha: 0.8);
+               box-shadow: 0 0 20px 4px #00000045;
+               display: none;
+               z-index: 10;
+               .icon-div{
+                display: table-cell;
+                vertical-align: middle;
+               }
+               .icons{
+                background: rgba($color: #4e5253, $alpha: 0.8);
+                width: 60%;
+                height: 60px;
+                border-radius: 30px;
+                padding: 7%;
+                margin: 0 auto;
+                img{
+                    margin: 0 5% ;
+                }
+            }
+        
+           }
+           
+        }
+    }
+    .forth-div{
+        padding: 5% 0;
+        @include bgImage('../img/bg_img.png', 900px );
+        .title-row{
+            h2{
+                font-size: 40px;
+                color: $yellowColor;
+                line-height: 19px;
+                letter-spacing: 100;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+            @include lineRhomus();
+        }
+        .designers-row{
+            margin-top: 10%;
+            img{
+                width: 100%;
+            }
+            span{
+                font-size: 30px;
+                letter-spacing: 0.8px;
+                color: $whiteColor;
+                font-weight: 600;
+                
+            }
+            .line{
+                height: 2px;
+                background: $yellowColor;
+                display: inline-block;
+                margin-bottom: 2%;
+                width: 45%;
+            }
+            
+        }
+    }
+    .fifth-div{
+        padding: 5% 0;
+        .title-row{
+            h2{
+                font-size: 40px;
+                color: black;
+                line-height: 19px;
+                letter-spacing: 100;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+            @include lineRhomus();
+        }
+        .slider{
+            margin-top: 5%;
+            .slides{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    position: absolute;
+                    top: 50px;
+                    left:65px;
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+                    font-weight: 600;
+                    width: 60%;
+                }
+                p{
+                    position: absolute;
+                    bottom: 150px;
+                    left: -65px;
+                    transform: rotate(-90deg);
+                    color: $whiteColor;
+                    font-size: 20px;
+                    letter-spacing: 6.4px;
+                    text-transform: uppercase;
+                }
+            }
+            .slick-prev{
+                left: 50px;
+                z-index: 10;
+            }
+            .slick-next{
+                right: 50px;
+                z-index: 10;
+            }
+            .slick-next,.slick-prev{
+                &::before{
+                    font-size: 50px;
+                    color: #e8e6e645;
+                }
+            }
+        }
+       
+    }
 }
