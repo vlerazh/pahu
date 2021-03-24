@@ -52,6 +52,29 @@ $whiteColor: #fff;
         }
     }
 }
+@mixin titleRow($color){
+    .title-row{
+        h2{
+            font-size: 40px;
+            color: $color;
+            line-height: 19px;
+            letter-spacing: 100;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        @include lineRhomus();
+    }
+}
+@mixin verticalLine {
+    .vertical-line{
+        width: 2px;
+        height: 120px;
+        background: $yellowColor;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
 body{
     font-family: $primaryFont;
 }
@@ -117,18 +140,7 @@ main{
     .first-div{
         background-color: $primaryColor;
         padding: 5% 0;
-        .title-row{
-            h2{
-                font-size: 40px;
-                color: $yellowColor;
-                line-height: 19px;
-                letter-spacing: 100;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: 700;
-            }
-            @include lineRhomus();
-        }
+        @include titleRow($yellowColor);
         .content-row{
             color: $whiteColor;
             margin-top: 8%;
@@ -224,18 +236,7 @@ main{
     .third-div{
         padding: 5% 0;
         background-color: $lightGrayColor;
-        .title-row{
-            h2{
-                font-size: 40px;
-                color: black;
-                line-height: 19px;
-                letter-spacing: 100;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: 700;
-            }
-            @include lineRhomus();
-        }
+        @include titleRow(black);
         .card-row {
            .card{
                background-color: $whiteColor;
@@ -315,18 +316,7 @@ main{
     .forth-div{
         padding: 5% 0;
         @include bgImage('../img/bg_img.png', 900px );
-        .title-row{
-            h2{
-                font-size: 40px;
-                color: $yellowColor;
-                line-height: 19px;
-                letter-spacing: 100;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: 700;
-            }
-            @include lineRhomus();
-        }
+        @include titleRow($yellowColor);
         .designers-row{
             margin-top: 10%;
             img{
@@ -350,19 +340,8 @@ main{
         }
     }
     .fifth-div{
-        padding: 5% 0;
-        .title-row{
-            h2{
-                font-size: 40px;
-                color: black;
-                line-height: 19px;
-                letter-spacing: 100;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: 700;
-            }
-            @include lineRhomus();
-        }
+        padding: 5% 0 0 0;
+       @include titleRow(black);
         .slider{
             margin-top: 5%;
             .slides{
@@ -408,4 +387,83 @@ main{
         }
        
     }
+    .sixth-div{
+        padding: 5% 0;
+        background-color: $lightGrayColor;
+        @include titleRow(black);
+        .card{
+            background: $whiteColor;
+            border: none;
+            margin-top: 10%;
+            .card-title{
+                font-size: 20px;
+                line-height: 79px;
+                text-transform: uppercase;
+                color: black;
+                font-weight: 600;
+            }
+            .card-text{
+                font-size: 14px;
+                color: #31302d;
+            }
+            .btn{
+                background: $yellowColor;
+                color: black;
+                text-transform: uppercase;
+                width: 150px;
+                height: 50px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
 }
+
+footer{
+    padding: 5% 0;
+    background: $primaryColor;
+    @include verticalLine();
+    .text{
+        display: inline-block;
+        margin-left: 5%;
+        p{
+            color: $yellowColor;
+            font-size: 25px;
+            letter-spacing: 1.6px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        span{
+            color: $whiteColor;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+    .container .row:nth-child(2){
+        margin-top: 5%;
+        .logo{
+            display: block;
+            margin-bottom: 5%;
+            width: 250px;
+            margin-left: 5px;
+        }
+        a{
+            img{
+                margin: 0 3%;
+            }
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+            color: $whiteColor;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            color: $whiteColor;
+            margin: 2px 0;
+        }
+    }
+}
+    

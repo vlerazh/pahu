@@ -381,7 +381,99 @@
             </div>
             </div>
       </div>
+      <div class="sixth-div">
+        <div class="container">
+          <div class="row title-row">
+            <div class="col-xl-12 text-center">
+              <h2>From our blog</h2>
+              <div class="line"></div>
+              <div class="rhombus"></div>
+              <div class="line"></div>
+            </div>
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="card">
+                  <img src="img/from_blog1.png" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Our new work space</h5>
+                    <p class="card-text">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+                    <a href="#"><button class="btn">Read more -></button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="card">
+                  <img src="img/from_blog2.png" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Our new work space</h5>
+                    <p class="card-text">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+                    <a href="#"><button class="btn">Read more -></button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="card">
+                  <img src="img/from_blog3.png" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Our new work space</h5>
+                    <p class="card-text">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+                    <a href="#"><button class="btn">Read more -></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="vertical-line"></div>
+              <div class="text">
+                <p>Call us now</p>
+                <span>Office telephone: (251) 546-9442 <br> Hotline: 906-2721</span>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="vertical-line"></div>
+              <div class="text">
+                <p>Come visit us</p>
+                <span>123 6th St. <br> Melbourne, FL 32904</span>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="vertical-line"></div>
+              <div class="text">
+                <p>Send a message</p>
+                <span>Email: pahudesign@pahu.vn <br> Inquiries: support@pahu.vn </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4">
+              <img src="img/logo.png" alt="" class="logo">
+              <a href="#"><img src="img/fb.png" alt=""></a>
+              <a href="#"><img src="img/google.png" alt=""></a>
+              <a href="#"><img src="img/twitter.png" alt=""></a>
+              <a href="#"><img src="img/youtube.png" alt=""></a>
+            </div>
+            <div class="col-xl-4">
+              <h3>Hours work</h3>
+              <p>Monday - Friday: 08:00 am - 17:00 pm.</p>
+              <p>Saturday: 09:00 am - 12h30 pm.</p>
+            </div>
+            <div class="col-xl-4">
+              <h3>Newsletter</h3>
+              <input type="text">
+              <p class="arrow">-></p>
+              <p>Sign up to get exclusive offers from our favorite brands and to be well up in the news.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -391,7 +483,7 @@
       $(document).ready(function(){
         $(".regular").slick({
           dots: false,
-          infinite: true,
+          infinite: false,
           arrows:true,
           slidesToShow: 4,
           slidesToScroll: 1

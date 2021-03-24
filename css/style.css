@@ -442,7 +442,7 @@ main .forth-div .designers-row .line {
 }
 
 main .fifth-div {
-  padding: 5% 0;
+  padding: 5% 0 0 0;
 }
 
 main .fifth-div .title-row h2 {
@@ -533,5 +533,140 @@ main .fifth-div .slider .slick-next {
 main .fifth-div .slider .slick-next::before, main .fifth-div .slider .slick-prev::before {
   font-size: 50px;
   color: #e8e6e645;
+}
+
+main .sixth-div {
+  padding: 5% 0;
+  background-color: #f9fafc;
+}
+
+main .sixth-div .title-row h2 {
+  font-size: 40px;
+  color: black;
+  line-height: 19px;
+  letter-spacing: 100;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+main .sixth-div .title-row .line {
+  height: 1px;
+  background-color: #5e5e5d;
+  width: 15%;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .sixth-div .title-row .rhombus {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #fece76;
+  position: relative;
+  top: -16px;
+  display: inline-block;
+}
+
+main .sixth-div .title-row .rhombus::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #fece76;
+}
+
+main .sixth-div .card {
+  background: #fff;
+  border: none;
+  margin-top: 10%;
+}
+
+main .sixth-div .card .card-title {
+  font-size: 20px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+}
+
+main .sixth-div .card .card-text {
+  font-size: 14px;
+  color: #31302d;
+}
+
+main .sixth-div .card .btn {
+  background: #fece76;
+  color: black;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 5% 0;
+  background: #181817;
+}
+
+footer .vertical-line {
+  width: 2px;
+  height: 120px;
+  background: #fece76;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .text {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+footer .text p {
+  color: #fece76;
+  font-size: 25px;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer .text span {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+footer .container .row:nth-child(2) {
+  margin-top: 5%;
+}
+
+footer .container .row:nth-child(2) .logo {
+  display: block;
+  margin-bottom: 5%;
+  width: 250px;
+  margin-left: 5px;
+}
+
+footer .container .row:nth-child(2) a img {
+  margin: 0 3%;
+}
+
+footer .container .row:nth-child(2) h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer .container .row:nth-child(2) p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin: 2px 0;
 }
 /*# sourceMappingURL=style.css.map */
